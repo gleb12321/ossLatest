@@ -1,0 +1,50 @@
+<title>{%if tag == "Главная страница"%}
+Главная страница
+{%else%}
+404
+{%endif%}
+</title>
+<!--{% include 'includes/menu.html' %}-->
+    <header>
+{% include 'includes/header.html' %}
+    </header>
+<body>
+<div>
+<div class="product-item1">
+  <img src="https://i.imgur.com/8vH3dft.png">
+  <div class="product-list">
+    <h3>Windows 10</h3>
+      <h3>Быстрая и удобная ОС</h3>
+      <a href="" class="button1">Скачать .iso</a>
+  </div>
+</div>
+
+
+<div class="product-item">
+  <img src="https://avatars.mds.yandex.net/i?id=4fb0e83abe91b5dc6ca0de8fbf936cfd-5917291-images-thumbs&n=13">
+  <div class="product-list">
+    <h3>Windows 8</h3>
+      <h3>Идеально для слабых пк</h3>
+      <a href="" class="button">Скачать .iso</a>
+  </div>
+</div>
+</div>
+
+    <footer class="border-top text-center py-3">
+      {% include 'includes/footer.html' %}
+    </footer>
+  </body>
+
+
+
+
+
+
+
+
+
+
+
+<style>
+    {% include 'css/cssindex.html' %}
+</style>
