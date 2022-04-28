@@ -9,18 +9,19 @@
 {% include 'includes/header.html' %}
     </header>
 <body>
-<div class="frames">
-<div class="product-item1">
+
+
+<div id="win10">
+<div class="product-item">
   <img src="https://avatars.mds.yandex.net/i?id=925bd70ef724a470f07ed978d23a9851-5877100-images-thumbs&n=13">
   <div class="product-list">
     <h3>Windows 10</h3>
-      <h3>Быстрая и удобная ОС</h3>
-      <a href="" class="button">Скачать .iso</a>
+      <h3>Быстрая и удобная ос</h3>
+      <a href="windows10" class="button">Скачать .iso</a>
   </div>
 </div>
 
-
-<div class="product-item">
+<div class="product-item" id="win8">
   <img src="https://avatars.mds.yandex.net/i?id=4fb0e83abe91b5dc6ca0de8fbf936cfd-5917291-images-thumbs&n=13">
   <div class="product-list">
     <h3>Windows 8</h3>
@@ -29,12 +30,23 @@
   </div>
 </div>
 </div>
+</div>
+
+
+
     <footer class="border-top text-center py-3">
       {% include 'includes/footer.html' %}
     </footer>
   </body>
 
-
+<style>
+    #win10{
+    position: absolute;
+left: 0;}
+#win8{
+position: absolute;
+left: 500px;}
+</style>
 
 
 

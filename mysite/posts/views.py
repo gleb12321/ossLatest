@@ -24,7 +24,7 @@ def about(request):
         'title':'немного про нас:',
         'tag':'о нас'
     }
-    return render(request, 'mysite/about.html', context)
+    return render(request, 'mysite/windows10.html', context)
 
 
 def register(request):
